@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Produit1",
+      "grammage" : "30",
+      "texture": "Métal",
+      "couleur": "Bleu"
+    },
+    {
+      "id": 2,
+      "name": "Produit2",
+      "grammage" : "35",
+      "texture": "Acier",
+      "couleur": "Rouge"
+    },
+    {
+      "id": 3,
+      "name": "Produit3",
+      "grammage" : "100",
+      "texture": "Plastique",
+      "couleur": "Rose"
+    },
+    {
+      "id": 4,
+      "name": "Produit4",
+      "grammage" : "33",
+      "texture": "Alu",
+      "couleur": "Cyan"
+    },
+    {
+      "id": 5,
+      "name": "Produit4",
+      "grammage" : "33",
+      "texture": "Alu",
+      "couleur": "Cyan"
+    }
+  ]

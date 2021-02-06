@@ -1,1 +1,9 @@
-<p>details-product works!</p>
+<div class="encadrer">
+<p>Detail du produit :</p>
+<ng-container *ngIf="selectedProduct!=null">
+<p>Nom: {{selectedProduct.name}}</p>
+<p>Texture: {{selectedProduct.texture}}</p>
+<p>Couleur : {{selectedProduct.couleur}}</p>
+<p>Grammagge: {{selectedProduct.grammage}} </p>
+</ng-container>
+</div>

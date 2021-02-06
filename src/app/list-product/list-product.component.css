@@ -1,0 +1,14 @@
+.selected{
+    border: 5px solid green;
+    color: aqua;
+    size: 15pt;
+}
+ul{
+    border: 15px solid black;
+}
+.title{
+    text-decoration-style: solid, double;
+    font-size: 25pt;
+    text-decoration: underline;
+    text-align: center;
+}
