@@ -2,7 +2,3 @@
 <ul>
     <li *ngFor="let p of productList$ | async" (click)="onSelectionChange(p)" [class.selected]="isSelected(p)">{{p.getName()}}</li>
 </ul>
-<button (click)="onUpdate()">Modifier</button>
-<button (click)="onAdd()">Ajouter</button>
-<app-details-product [selectedProduct]="selectedProduct" *ngIf="!isEditing"></app-details-product> 
-<app-form-product [product]="selectedProduct" (done)="formDone()" *ngIf="isEditing"></app-form-product>

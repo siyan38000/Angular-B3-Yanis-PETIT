@@ -2,7 +2,6 @@ import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { product } from '../Models/products';
 
-
 @Component({
   selector: 'app-details-product',
   templateUrl: './details-product.component.html',
@@ -11,9 +10,10 @@ import { product } from '../Models/products';
 export class DetailsProductComponent implements OnInit {
 
 
-  @Input()
-  public selectedProduct!: product;
+  @Input() public selectedProduct: product;
+
   constructor() { }
+
   ngOnInit(): void{
 }
 }

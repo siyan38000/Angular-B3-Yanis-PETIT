@@ -2,7 +2,7 @@ import { EventEmitter } from '@angular/core';
 import { Input } from '@angular/core';
 import { Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule ,Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, ReactiveFormsModule ,Validators } from '@angular/forms';
 import { product } from '../Models/products';
 import { ProductService } from '../product-service.service';
 
@@ -39,7 +39,9 @@ productForm = this.fb.group({
       this.product =  new product(this.productForm.value);
       this.productServ.Updateproduct(this.product);
       this.productServ.selectProduct(this.product);
-      debugger
       this.done.emit();
+  }
+  shouldShowRequiredError(control: AbstractControl){
+    return !control.pristine && control.hasError('required');
   }
 }

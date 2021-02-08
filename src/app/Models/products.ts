@@ -15,6 +15,8 @@ export class product {
           this.texture = data.texture;
           if (data.hasOwnProperty('couleur'))
           this.couleur = data.couleur;
+          if (data.hasOwnProperty('grammage'))
+          this.grammage = data.grammage;
         }
       }
 

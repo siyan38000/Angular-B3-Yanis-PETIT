@@ -1,3 +1,22 @@
-<div class="encadrer">
-<p>form-product works!</p>
-</div>
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+	<label>
+		name:
+		<input type="text" placeholder="Nom du produit" formControlName="name" />
+		<span *ngIf="shouldShowRequiredError(productForm.controls.name)">Ce champ est requis</span>
+	</label>
+	<label>
+		Couleur:
+		<input type="text" placeholder="Couleur du produit" formControlName="couleur" />
+	</label>
+	<label>
+		Texture:
+		<input type="text" placeholder="Texture du produit" formControlName="texture" />
+    </label>
+    <label>
+		Grammage:
+		<input type="text" placeholder="Grammage du produit" formControlName="grammage" />
+    </label>
+
+	<button (click)="onCancel()">Annuler</button>
+	<button type="submit" [disabled]="!productForm.valid">Valider</button>
+</form>

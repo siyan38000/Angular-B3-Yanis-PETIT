@@ -1,0 +1,5 @@
+<app-list-product (selectionChanged)="onSelectionChanged($event)" [canChangeSelection]="!isEditing" ></app-list-product>
+<button (click)="onUpdate()">Modifier</button>
+<button (click)="onAdd()">Ajouter</button>
+<app-details-product [selectedProduct]="selectedProduct" *ngIf="!isEditing"></app-details-product> 
+<app-form-product [product]="selectedProduct" (done)="formDone()" *ngIf="isEditing"></app-form-product>
