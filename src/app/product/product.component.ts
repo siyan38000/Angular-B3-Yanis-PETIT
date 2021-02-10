@@ -11,7 +11,6 @@ export class ProductComponent implements OnInit {
 
   constructor(private productServ: ProductService){}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
   public selectedProduct: product;
   public isEditing = false;

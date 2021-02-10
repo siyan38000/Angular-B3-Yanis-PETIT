@@ -1,0 +1,4 @@
+<div *ngFor ="let p of productList$ | async">
+<a routerLink="/details/{{p.getId()}}">{{p.getName()}}</a>
+
+</div>

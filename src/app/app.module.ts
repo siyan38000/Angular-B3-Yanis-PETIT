@@ -8,6 +8,7 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { DetailsProductComponent } from './details-product/details-product.component';
 import { FormProductComponent } from './form-product/form-product.component';
 import { ProductComponent } from './product/product.component';
+import { PageListComponent } from './page-list/page-list.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import { ProductComponent } from './product/product.component';
     ListProductComponent,
     DetailsProductComponent,
     FormProductComponent,
-    ProductComponent
+    ProductComponent,
+    PageListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

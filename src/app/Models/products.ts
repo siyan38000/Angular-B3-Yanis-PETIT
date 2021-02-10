@@ -23,4 +23,7 @@ export class product {
       getName(){
         return `${this.name}`;
       }
+      getId(){
+        return `${this.id}`;
+      }
 }
