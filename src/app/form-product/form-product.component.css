@@ -1,3 +1,13 @@
 .encadrer{
     border: 15px solid black;
 }
+button{
+    border-radius: 15px;
+    margin: 1%;
+}
+.valid-button{
+    background-color: chartreuse;
+}
+.cancel-button{
+    background-color: red;
+}

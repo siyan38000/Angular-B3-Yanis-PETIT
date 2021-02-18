@@ -1,0 +1,10 @@
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #aabbcc;
+    padding: 1%;
+    border-radius: 15px;
+}
+li{
+    margin-right: 1%;
+}

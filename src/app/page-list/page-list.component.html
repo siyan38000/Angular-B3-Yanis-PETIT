@@ -1,4 +1,7 @@
+<div class="encadrer">
 <div *ngFor ="let p of productList$ | async">
 <a routerLink="/details/{{p.getId()}}">{{p.getName()}}</a>
-
+</div>
+<button (click)="onAdd()">Ajouter</button>
+<app-form-product (done)="formDone()" *ngIf="isEditing"></app-form-product>
 </div>

@@ -55,9 +55,6 @@ export class ProductService {
         result.push(new product(element));
       });
       this.productList = result;
-      //return result;
-      // autre méthode (plus élégante mais attention à la confusion avec map (rxjs) et map (sur les tableaux))
-      //  => équivalent du .Select en c# avec Linq => cette fonction map s'applique sur les tableaux
       return data.map(e=>new product(e));
     }),
     shareReplay(1),
@@ -68,14 +65,12 @@ export class ProductService {
   getAllProducts(){
     return this.getAllProduct$;
   }
-  /*public getById(id : number){
-    return this.getAllProduct$.pipe(
-      // faire le job pour retourner uniquement le bon joueur
-      // à vous d'inventer le code pour la question 5 !
-      map((d)=>d.find(id))
-
-    )
-  }*/
+  
+  getById(id: number) {
+    return this.getAllProducts().pipe(
+      map(prods => prods.filter(prod => prod.id === id))
+    );
+  }
 
   selectProduct(p: product){
     this.selectedProduct = p;
